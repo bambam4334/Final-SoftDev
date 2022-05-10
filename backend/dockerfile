@@ -1,0 +1,14 @@
+FROM node:17-alpine3.15
+WORKDIR /demo
+
+#1
+
+COPY . .
+RUN npm install
+RUN npm build
+
+#2
+
+# COPY package.json . 
+# RUN npm install
+# COPY . . 
